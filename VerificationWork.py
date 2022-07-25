@@ -4,7 +4,7 @@ from random import randint
 
 
 def cls():
-    print("/n" * 100)
+    print("\n" * 100)
 
 
 def get_quantity_rows():
@@ -22,8 +22,14 @@ def generate_alphanum_random_string(length):
     return rand_string
 
 
+cls()
+print('Задача: Написать программу. которая из имеющегося массива строк формирует массив из строк, длина которых\n '
+      'меньше либо равна 3 символа. Первоначальный массив можно ввести с клавиатуры, либо задать на старте\n '
+      'выполнения алгоритма. При решении не рекомендуется пользоваться коллекциями, лучше обойтись\n исключительно '
+      'массивами. ')
+print('\n' * 4)
 m = get_quantity_rows()
-
+print('\n')
 Array = []
 NewArray = []
 lim = 3
@@ -33,7 +39,7 @@ while i < m:
     Array.append(generate_alphanum_random_string(n))
     i += 1
 print(f'Случайный массив: {Array}')
-
+print('\n')
 i = 0
 while i < m:
     if len(Array[i]) <= lim:

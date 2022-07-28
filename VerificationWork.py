@@ -46,3 +46,5 @@ while i < m:
         NewArray.append(Array[i])
     i = i + 1
 print(f'Новый массив соответствующий условиям задачи: {NewArray}')
+print('\n')
+print('The End')
